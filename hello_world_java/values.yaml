@@ -1,0 +1,4 @@
+image: ccaum/hello_world_java
+imageTag: latest
+stage: prod
+nodePort: 32000

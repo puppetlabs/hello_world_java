@@ -1,0 +1,13 @@
+name: hello_world_java
+version: 0.1.1
+appVersion: 1.4.0
+home: https://github.com/puppetlabs/pipelines-self-paced
+description: Hello World Java Demo App
+keywords:
+- hol
+- kubecon
+sources:
+- https://github.com/puppetlabs/pipelines-self-paced
+maintainers:
+- name: Carl Caum
+  email: carl@puppet.com
