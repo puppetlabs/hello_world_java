@@ -7,6 +7,8 @@ import spark.Response;
 import spark.Spark;
 import spark.template.thymeleaf.ThymeleafTemplateEngine;
 
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -52,6 +54,7 @@ public class App
 
     App t = new App();
     params.put("version", t.getClass().getPackage().getImplementationVersion() );
+    params.put("hostname", t.getServerHostname() );
 
     Polyglot p = new Polyglot();
 
@@ -74,4 +77,12 @@ public class App
     return new ModelAndView(params, "index");
   }
 
+  public static String getServerHostname() {
+    try {
+      InetAddress ip = InetAddress.getLocalHost();
+      return ip.getHostName();
+    } catch (UnknownHostException e) {
+      return "Unknown Hostname";
+    }
+  }
 }
