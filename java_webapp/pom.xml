@@ -5,7 +5,7 @@
   <artifactId>java-webapp</artifactId>
   <packaging>jar</packaging>
   <name>java-webapp</name>
-  <version>1.4</version>
+  <version>1.5</version>
   <url>http://maven.apache.org</url>
 
   <properties>
