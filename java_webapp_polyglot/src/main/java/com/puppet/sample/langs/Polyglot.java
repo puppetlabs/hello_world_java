@@ -27,4 +27,9 @@ public class Polyglot
         return "مرحبا بالعالم!";
     }
 
+    public String jpMsg()
+    {
+        return "こんにちは世界!";
+    }
+
 }

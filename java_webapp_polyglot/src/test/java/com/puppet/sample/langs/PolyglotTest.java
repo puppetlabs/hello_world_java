@@ -29,4 +29,9 @@ public class PolyglotTest
     public void testArMsg() {
         assertEquals("مرحبا بالعالم!", new Polyglot().arMsg());
     }
+
+    @Test
+    public void testJpMsg() {
+        assertEquals("こんにちは世界!", new Polyglot().jpMsg());
+    }
 }

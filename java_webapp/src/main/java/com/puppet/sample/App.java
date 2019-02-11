@@ -69,6 +69,8 @@ public class App
                  break;
       case "hi": params.put("lang", p.hiMsg());
                  break;
+      case "jp": params.put("lang", p.jpMsg());
+                 break;
       default: String msg = "I don't know that language ~> ";
                msg += req.params(":lang");
                params.put("lang", msg); 

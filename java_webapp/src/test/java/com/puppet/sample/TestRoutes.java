@@ -68,6 +68,13 @@ public class TestRoutes
         assertTrue(res.body.contains("مرحبا بالعالم!"));
     }
 
+	@Test
+    public void testJpMsg() throws IOException {
+        TestResponse res = request("GET", "/jp");
+        assertEquals(200, res.status);
+        assertTrue(res.body.contains("こんにちは世界!"));
+    }
+
     private TestResponse request(String method, String path) throws java.io.IOException {
 		try {
 			URL url = new URL("http://localhost:9999" + path);
